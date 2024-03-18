@@ -15,7 +15,11 @@ struct ContentView: View {
             Image("tiger")
                 .resizable()
                 .scaledToFit()
-            Image(systemName: orders.isEmpty ? "cart" : "cart.fill") // SF Symbols
+            Label(
+                title: { /*@START_MENU_TOKEN@*/Text("Label")/*@END_MENU_TOKEN@*/ },
+                icon: { Image(systemName: orders.isEmpty ? "cart" : "cart.fill") /* SF Symbols */ }
+            )
+            
             
             HStack {
                     Text("Order Pizza")
@@ -38,7 +42,7 @@ struct ContentView: View {
                 .padding(.bottom, 30)
                     ForEach(1...5, id: \.self) { item in  // Use of \.self
                         HStack(alignment: .top,spacing: 10) {
-                            Image(systemName: "\(item).circle").font(.title2)
+                            //Image(systemName: "\(item).circle").font(.title2)
                             Image("pz1")
                                 .resizable()
                                 .scaledToFit()
@@ -47,7 +51,7 @@ struct ContentView: View {
                                 Text("Margherita")
                                 Text("Pizza with paparoni")
                             }
-                            Spacer()
+                           // Spacer()
                         }
                     }
                 }
