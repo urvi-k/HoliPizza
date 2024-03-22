@@ -9,7 +9,18 @@ import SwiftUI
 
 struct MenuRowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top,spacing: 10) {
+            //Image(systemName: "\(item).circle").font(.title2)
+            Image("pz1")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
+            VStack(alignment: .leading) {
+                Text("Margherita")
+                RetingsView(rating: 4)
+            }
+           // Spacer()
+        }
     }
 }
 
