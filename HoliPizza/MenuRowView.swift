@@ -15,11 +15,17 @@ struct MenuRowView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80)
+            // MARK: Image Shape
+                .clipShape(Circle())
+                .padding(.trailing, -10)
+                .padding(.leading, 5)
             VStack(alignment: .leading) {
                 Text("Margherita")
+                // MARK: Custom Font
+                    .font(.custom("Georgia", size: 18, relativeTo: .body))
                 RetingsView(rating: 4)
             }
-           // Spacer()
+            Spacer()
         }
     }
 }

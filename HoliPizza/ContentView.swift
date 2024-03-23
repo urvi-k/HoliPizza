@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
    
+    var isShowOrder: Bool = false
     var body: some View {
         VStack {
             HeaderView()
             ScrollView {
                 VStack{
-                    OrderView()
-                    MenuView()
-                    MenuItemView()
+                    if isShowOrder {
+                        OrderView()
+                    } else {
+                        MenuView()
+                        MenuItemView()
+                    }
                 }
             }
             

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuItemView: View {
     var body: some View {
+        // MARK: Foreach \.self usage
         ForEach(1...5, id: \.self) { item in  // Use of \.self
             MenuRowView()
         }
