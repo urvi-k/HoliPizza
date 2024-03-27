@@ -9,12 +9,14 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        ZStack{
+        ZStack(alignment: .bottomTrailing){
             Image("tiger")
                 .resizable()
                 .scaledToFit()
             Text("Huli Pizza")
-                .background()
+                .font(.custom("Georgia", size: 18, relativeTo: .body))
+                .foregroundColor(.white)
+                
         }
     }
 }

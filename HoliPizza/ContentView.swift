@@ -19,6 +19,9 @@ struct ContentView: View {
                         OrderView()
                     } else {
                         MenuView()
+                            .padding(10)
+                        // MARK: background color in: use
+                            .background(Color.secondary.opacity(0.3), in: RoundedRectangle(cornerRadius: 15))
                         MenuItemView()
                     }
                 }

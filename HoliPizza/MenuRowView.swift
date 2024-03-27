@@ -21,6 +21,8 @@ struct MenuRowView: View {
                 .padding(.leading, 5)
             VStack(alignment: .leading) {
                 Text("Margherita")
+                // MARK: Assign color set
+                    .foregroundColor(Color("dulBlue"))
                 // MARK: Custom Font
                     .font(.custom("Georgia", size: 18, relativeTo: .body))
                 RetingsView(rating: 4)
