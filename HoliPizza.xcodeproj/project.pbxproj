@@ -117,10 +117,10 @@
 				41C787972BA7FC78001992F7 /* MenuRowView.swift */,
 				41C787992BA7FCDC001992F7 /* OrderRowView.swift */,
 				41C7879B2BA7FD22001992F7 /* HeaderView.swift */,
+				412C1D552BAD25AD007B61CC /* RetingsView.swift */,
 				41F082052B905D060009503C /* Assets.xcassets */,
 				41F082072B905D060009503C /* HoliPizza.entitlements */,
 				41F082082B905D060009503C /* Preview Content */,
-				412C1D552BAD25AD007B61CC /* RetingsView.swift */,
 			);
 			path = HoliPizza;
 			sourceTree = "<group>";

@@ -21,7 +21,8 @@ struct ContentView: View {
                         MenuView()
                             .padding(10)
                         // MARK: background color in: use
-                            .background(Color.secondary.opacity(0.3), in: RoundedRectangle(cornerRadius: 15))
+                           // .background(Color.secondary.opacity(0.3), in: RoundedRectangle(cornerRadius: 15))
+                            .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 15))
                         MenuItemView()
                     }
                 }
@@ -29,6 +30,10 @@ struct ContentView: View {
             
         }
         .padding()
+        
+        .background(.linearGradient(colors: [ .cyan, .dulBlue.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomLeading))
+        
+        
         Spacer()
     }
 }

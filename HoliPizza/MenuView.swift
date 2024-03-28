@@ -17,6 +17,9 @@ struct MenuView: View {
                 .cornerRadius(10)
             Text("Margherita")
                 .font(.custom("Georgia", size: 20, relativeTo: .body))
+            //MARK: foregroundStyle
+                .foregroundStyle(.thickMaterial)
+                //.foregroundColor(.blue)
                 .fontWeight(.bold)
             Text("Huli Pizza have a cheesee Margherita with capsicum, onion, tomato and sevent type of cheese. The taste is amazing and I would love to eat it again and again for the rest of my life.")
                 //.font(.caption)
