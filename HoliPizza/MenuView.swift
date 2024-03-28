@@ -11,10 +11,14 @@ struct MenuView: View {
     var body: some View {
         VStack{
             Image("pz1")
+                
                 .resizable()
                 .scaledToFit()
-               // .clipShape(RoundedRectangle(cornerRadius: 10)) // MARK:- new
                 .cornerRadius(10)
+                .shadow(color: .white, radius: 15, x: 1, y: 1)
+                .padding()
+               // .clipShape(RoundedRectangle(cornerRadius: 10)) // MARK:- new
+                
             Text("Margherita")
                 .font(.custom("Georgia", size: 20, relativeTo: .body))
             //MARK: foregroundStyle

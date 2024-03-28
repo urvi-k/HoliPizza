@@ -27,14 +27,14 @@ struct ContentView: View {
                     }
                 }
             }
-            
         }
+        
         .padding()
         
         .background(.linearGradient(colors: [ .cyan, .dulBlue.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomLeading))
         
         
-        Spacer()
+        //Spacer()
     }
 }
 
